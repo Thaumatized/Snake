@@ -1,0 +1,30 @@
+#GameContainer{
+    width: 10rem;
+    box-sizing: content-box;
+    line-height: 0;
+    border: 0.5rem solid black;
+    margin: auto;
+}
+.GameCell{
+    box-sizing: border-box;
+    display: inline-block;
+    width: 1rem;
+    height: 1rem;
+    margin: 0;
+    background-color: #252525;
+}
+.Dark{
+    background-color: #663399;
+}
+.Apple{
+    background-color: greenyellow;
+}
+.SnakeBody{
+    background-color: orangered;
+}
+.SnakeHead{
+    background-color: red;
+}
+.DeadSnake{
+    background-color: #ac6926;
+}

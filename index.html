@@ -1,0 +1,45 @@
+
+<!doctype html>
+<html>
+<head>
+	<link rel="stylesheet" href="snake.css">
+</head>
+<title>Snake</title>
+<div class="divmain">
+	<h2 class="h2">Snake</h2>
+	<button onclick="Reset()">Reset</button>
+	<div id="GameContainer">
+	</div>
+</div>
+<div class="divmain">
+	<h2>Game Settings</h2>
+	<table>
+		<tr>
+			<td>Game width:</td>
+			<td><input id="gamewidth" type="number" value="20" min="5" onchange="Reset()"></td>
+		</tr>
+		<tr>
+			<td>Game height:</td>
+			<td><input id="gameheight" type="number" value="20" min="5" onchange="Reset()"></td>
+		</tr>
+		<tr>
+			<td>Apples at a time:</td>
+			<td><input id="apples" type="number" value="1" min="1" onchange="Reset()"></td>
+		</tr>
+		<tr>
+			<td>Loop around edges:</td>
+			<td><input id="looparound" type="checkbox" onchange="Reset()"></td>
+		</tr>
+	</table>
+</div>
+<div class="divmain">
+	<h2>Instructions:</h2>
+	<p> Turn the snake with WASD or the Arrow keys.<br>
+	Click the reset button or press the R-key to reset.<br>
+	<br>
+	For controllers left stick to turn and B/O to reset.
+	</p>
+</div>
+<script src="snake.js"></script>
+</body>
+</html>
